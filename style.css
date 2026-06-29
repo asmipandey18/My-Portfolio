@@ -1,0 +1,267 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0F172A;
+    color:#F8FAFC;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+    width: 100%;
+    padding: 25px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #F8FAFC;
+}
+
+/* Center Navbar */
+
+.navbar{
+    display: flex;
+    gap: 10px;
+
+    background: #1E293B;
+    padding: 10px 15px;
+
+    border-radius: 50px;
+    border: 1px solid #334155;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #E2E8F0;
+    padding: 12px 24px;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.navbar a:hover{
+    background: #38BDF8;
+    color: #0F172A;
+}
+
+/* Right Button */
+
+.talk-btn{
+    text-decoration: none;
+    background: #38BDF8;
+    color: #0F172A;
+
+    padding: 14px 28px;
+    border-radius: 50px;
+
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+.talk-btn:hover{
+    background: #A855F7;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:50px 10%;
+    gap:60px;
+}
+
+.hero-content{
+    flex:1;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    color:#FFFFFF;
+}
+
+.hero-content span{
+    color:#38BDF8;
+}
+
+.hero-content h3{
+    font-size:1.5rem;
+    color:#A855F7;
+    margin:15px 0;
+}
+
+.hero-content p{
+    max-width:650px;
+    margin:20px 0 35px;
+    line-height:1.8;
+    color:#CBD5E1;
+    font-size:1.05rem;
+}
+
+/* ================= IMAGE SECTION ================= */
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.image-wrapper{
+    width:400px;
+    height:400px;
+    padding:8px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#38BDF8,#A855F7);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+     position:relative; 
+
+     box-shadow:
+        0 0 30px rgba(56,189,248,0.4),
+        0 0 60px rgba(168,85,247,0.3); 
+}
+
+.image-wrapper img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid #0F172A;
+    transition:0.4s ease;
+}
+
+.image-wrapper img:hover{
+    transform:scale(1.03);
+}
+
+/* ================= BUTTONS ================= */
+
+.hero-btns{
+    display:flex;
+    gap:20px;
+}
+
+.btn,
+.btn-outline{
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:50px;
+    font-weight:600;
+    transition:0.3s ease;
+}
+
+.btn{
+    background:#38BDF8;
+    color:#0F172A;
+}
+
+.btn:hover{
+    background:#A855F7;
+    color:#FFFFFF;
+    transform:translateY(-5px);
+}
+
+.btn-outline{
+    border:2px solid #38BDF8;
+    color:#38BDF8;
+}
+
+.btn-outline:hover{
+    background:#38BDF8;
+    color:#0F172A;
+    transform:translateY(-5px);
+}
+/* ================= ABOUT SECTION ================= */
+
+.about{
+    padding: 100px 10%;
+}
+
+.about h2{
+    text-align: center;
+    font-size: 3rem;
+    color: #38BDF8;
+    margin-bottom: 50px;
+}
+
+.about-content{
+    max-width: 900px;
+    margin: auto;
+    background: #1E293B;
+    padding: 50px;
+    border-radius: 20px;
+    border: 1px solid #334155;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.about-content p{
+    color: #CBD5E1;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.about-content span{
+    color: #38BDF8;
+    font-weight: 600;
+}
+/* ================= MY APPROACH ================= */
+
+.approach-section{
+    margin-top: 60px;
+}
+
+.approach-section h3{
+    text-align: center;
+    font-size: 2rem;
+    color: #38BDF8;
+    margin-bottom: 40px;
+}
+
+.approach-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.approach-card{
+    background: #0F172A;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #334155;
+    transition: 0.3s ease;
+}
+
+.approach-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(56,189,248,0.2);
+}
+
+.approach-card h4{
+    color: #A855F7;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.approach-card p{
+    color: #CBD5E1;
+    line-height: 1.7;
+}

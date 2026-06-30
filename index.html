@@ -2,22 +2,21 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Asmi Pandey | Portfolio</title>
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+     <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <!-- CSS -->
+    <!-- Your CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Icons -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -27,32 +26,47 @@
     <header class="header">
 
         <div class="logo">
-            <a href="#">Asmi<span>.</span></a>
+
+            <a href="#">Asmi Pandey</a>
+
+            <p>AI & ML Enthusiast</p>
+
         </div>
 
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
 
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
             <a href="#contact">Contact</a>
 
         </nav>
 
+        <button class="menu-toggle" id="menu-toggle">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
         <div class="header-actions">
 
-            <button id="theme-toggle" aria-label="Toggle Theme">
+            <button id="theme-toggle">
+
                 <i class="fa-solid fa-moon"></i>
+
             </button>
 
-            <a href="#contact" class="btn">Let's Connect</a>
+            <a href="#contact" class="primary-btn">
+
+                Let's Connect
+
+            </a>
 
         </div>
 
     </header>
-
-    <!-- ================= MAIN ================= -->
 
     <main>
 
@@ -63,35 +77,40 @@
             <div class="hero-content">
 
                 <h1>
-                    Hi, I'm
-                    <span>Asmi Pandey</span>
+
+                    Hi, I'm <span>Asmi Pandey</span>
+
                 </h1>
 
                 <h2>
-                    Aspiring Full-Stack Developer |
-                    AI & Machine Learning Enthusiast
+
+                    Data Science | AI & ML Enthusiast
+
                 </h2>
 
                 <p>
 
-                    I build responsive, accessible and user-friendly
-                    web applications using HTML, CSS and JavaScript.
-                    Alongside web development, I enjoy exploring Data
-                    Science and Machine Learning to solve real-world
-                    problems through technology.
+                    I am a Bachelor of Computer Application (BCA) student with a
+                    passion for Web Development, Data Science, Artificial Intelligence,
+                    and Machine Learning. I enjoy building responsive web applications,
+                    analyzing data, and creating intelligent solutions that solve
+                    real-world problems.
 
                 </p>
 
                 <div class="hero-buttons">
 
                     <a href="#projects" class="primary-btn">
+
                         View Projects
+
                     </a>
 
                     <a href="#contact" class="secondary-btn">
-                        Contact Me
-                    </a>
 
+                        Contact Me
+
+                    </a>
                 </div>
 
             </div>
@@ -113,7 +132,12 @@
 
                 <h2>About Me</h2>
 
-                <p>Get to know me better.</p>
+                <p>
+
+                    Learn more about my background, interests, and journey
+                    in technology.
+
+                </p>
 
             </div>
 
@@ -128,29 +152,30 @@
 
                 <div class="about-content">
 
-                    <h3>
-                        Passionate Developer &
-                        Continuous Learner
-                    </h3>
+                    <h3>Hello, I'm Asmi Pandey</h3>
 
                     <p>
 
-                        I'm currently pursuing a Bachelor of Computer
-                        Applications (BCA) at Oxford College of
-                        Engineering and Management. I enjoy designing
-                        modern websites, building responsive user
-                        interfaces, and developing projects that solve
-                        practical problems.
+                        I am currently pursuing a Bachelor of Computer
+                        Application (BCA) at Oxford College of Engineering
+                        and Management. My interests include Artificial Intelligence, Machine Learning,
+                        and Data Science.
 
                     </p>
 
                     <p>
 
-                        Apart from web development, I am enthusiastic
-                        about Artificial Intelligence, Machine Learning,
-                        and Data Science. I enjoy learning new
-                        technologies and continuously improving my
-                        programming and problem-solving skills.
+                        I enjoy transforming ideas into practical software
+                        solutions through clean code, responsive user interfaces,
+                        and data-driven decision making.
+
+                    </p>
+
+                    <p>
+
+                        Beyond programming, I enjoy watching cricket and football.
+                        These sports inspire teamwork, strategy, discipline,
+                        and continuous improvement.
 
                     </p>
 
@@ -158,26 +183,30 @@
 
                         <article class="card">
 
-                            <i class="fa-solid fa-book-open"></i>
+                            <i class="fa-solid fa-code"></i>
 
-                            <h4>Continuous Learning</h4>
+                            <h4>Web Development</h4>
 
                             <p>
-                                Always learning modern technologies
-                                and best development practices.
+
+                                Building modern, responsive, and user-friendly
+                                web applications.
+
                             </p>
 
                         </article>
 
                         <article class="card">
 
-                            <i class="fa-solid fa-lightbulb"></i>
+                            <i class="fa-solid fa-brain"></i>
 
-                            <h4>Problem Solving</h4>
+                            <h4>Machine Learning</h4>
 
                             <p>
-                                Building efficient solutions through
-                                logic and clean code.
+
+                                Exploring predictive analytics and intelligent
+                                systems using Python.
+
                             </p>
 
                         </article>
@@ -186,11 +215,13 @@
 
                             <i class="fa-solid fa-chart-line"></i>
 
-                            <h4>Data Driven</h4>
+                            <h4>Data Analysis</h4>
 
                             <p>
-                                Using data and analysis to support
-                                better decisions.
+
+                                Converting raw data into meaningful insights
+                                through visualization and analytics.
+
                             </p>
 
                         </article>
@@ -203,59 +234,118 @@
 
         </section>
 
-        <!-- ================= SKILLS ================= -->
+            <!-- ================= SKILLS ================= -->
 
         <section class="skills" id="skills">
 
             <div class="section-title">
 
-                <h2>Technical Skills</h2>
+                <h2>My Skills</h2>
 
-                <p>Technologies I work with.</p>
+                <p>
+                    Technologies and tools that I use to build efficient,
+                    responsive, and data-driven applications.
+                </p>
 
             </div>
 
             <div class="skills-grid">
 
-                <div class="skill-card">
+                <article class="skill-card">
+
                     <i class="fa-brands fa-html5"></i>
+
                     <h3>HTML5</h3>
-                </div>
 
-                <div class="skill-card">
+                    <p>
+                        Creating semantic, accessible, and well-structured web pages.
+                    </p>
+
+                </article>
+
+                <article class="skill-card">
+
                     <i class="fa-brands fa-css3-alt"></i>
+
                     <h3>CSS3</h3>
-                </div>
 
-                <div class="skill-card">
+                    <p>
+                        Responsive layouts using Flexbox, Grid, animations, and media queries.
+                    </p>
+
+                </article>
+
+                <article class="skill-card">
+
                     <i class="fa-brands fa-js"></i>
+
                     <h3>JavaScript</h3>
-                </div>
 
-                <div class="skill-card">
+                    <p>
+                        Building interactive user interfaces using modern ES6+ JavaScript.
+                    </p>
+
+                </article>
+
+                <article class="skill-card">
+
                     <i class="fa-brands fa-python"></i>
+
                     <h3>Python</h3>
-                </div>
 
-                <div class="skill-card">
+                    <p>
+                        Programming, automation, data analysis, and machine learning.
+                    </p>
+
+                </article>
+
+                <article class="skill-card">
+
                     <i class="fa-solid fa-database"></i>
+
                     <h3>MySQL</h3>
-                </div>
 
-                <div class="skill-card">
+                    <p>
+                        Designing and managing relational databases efficiently.
+                    </p>
+
+                </article>
+
+                <article class="skill-card">
+
                     <i class="fa-brands fa-git-alt"></i>
-                    <h3>Git</h3>
-                </div>
 
-                <div class="skill-card">
-                    <i class="fa-brands fa-github"></i>
-                    <h3>GitHub</h3>
-                </div>
+                    <h3>Git & GitHub</h3>
 
-                <div class="skill-card">
+                    <p>
+                        Version control, collaboration, and project management.
+                    </p>
+
+                </article>
+
+                <article class="skill-card">
+
+                    <i class="fa-solid fa-chart-column"></i>
+
+                    <h3>Data Science</h3>
+
+                    <p>
+                        Data preprocessing, visualization, and predictive analytics.
+                    </p>
+
+                </article>
+
+                <article class="skill-card">
+
                     <i class="fa-solid fa-brain"></i>
+
                     <h3>Machine Learning</h3>
-                </div>
+
+                    <p>
+                        Building predictive models using Scikit-learn and Python.
+                    </p>
+
+                </article>
 
             </div>
 
@@ -269,45 +359,22 @@
 
                 <h2>Projects</h2>
 
-                <p>Some of my recent work.</p>
+                <p>
+                    Some of the projects I've built while learning web development,
+                    machine learning, and data science.
+                </p>
 
             </div>
 
             <div class="project-grid">
 
+                <!-- Project 1 -->
+
                 <article class="project-card">
 
                     <img src="images/project1.jpg"
-                        alt="Portfolio Project">
-
-                    <div class="project-content">
-
-                        <h3>Personal Portfolio</h3>
-
-                        <p>
-
-                            Responsive portfolio website developed
-                            using semantic HTML, custom CSS and
-                            vanilla JavaScript.
-
-                        </p>
-
-                        <div class="project-links">
-
-                            <a href="#">Live Demo</a>
-
-                            <a href="https://github.com/asmipandey18/My-Portfolio.git">GitHub</a>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-                <article class="project-card">
-
-                    <img src="images/project2.jpg"
-                        alt="AI Project">
+                         alt="AI Job Replacement Prediction Project"
+                         loading="lazy">
 
                     <div class="project-content">
 
@@ -315,52 +382,158 @@
 
                         <p>
 
-                            Machine Learning project predicting AI
-                            replacement risk using data preprocessing,
-                            feature engineering and Random Forest.
+                            Developed a machine learning model to predict
+                            AI replacement risk using data preprocessing,
+                            feature engineering, and classification algorithms.
 
+                        </p>
+
+                        <p><strong>Technologies:</strong></p>
+
+                        <p>
+                            Python • Pandas • NumPy • Scikit-learn • Matplotlib
                         </p>
 
                         <div class="project-links">
 
-                            <a href="#">Case Study</a>
+                            <a href="https://github.com/asmipandey18/My-Portfolio.git" target="_blank">
+                                GitHub
+                            </a>
 
-                            <a href="#">GitHub</a>
+                            <a href="#" target="_blank">
+                                Live Demo
+                            </a>
 
                         </div>
 
                     </div>
 
                 </article>
+
+                <!-- Project 2 -->
+
+                <article class="project-card">
+
+                    <img src="images/project2.jpg"
+                         alt="Hydropower Share Market Prediction"
+                         loading="lazy">
+
+                    <div class="project-content">
+
+                        <h3>Hydropower Share Market Prediction</h3>
+
+                        <p>
+
+                            Built a machine learning model to analyze
+                            hydropower stock market trends using historical
+                            data and predictive analytics.
+
+                        </p>
+
+                        <p><strong>Technologies:</strong></p>
+
+                        <p>
+
+                            Python • Machine Learning • Pandas • Scikit-learn
+
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/asmipandey18/My-Portfolio.git" target="_blank">
+                                GitHub
+                            </a>
+
+                            <a href="#" target="_blank">
+                                Live Demo
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Project 3 -->
 
                 <article class="project-card">
 
                     <img src="images/project3.jpg"
-                        alt="Hydropower Project">
+                         alt="Personal Portfolio Website"
+                         loading="lazy">
 
                     <div class="project-content">
 
-                        <h3>Hydropower Share Prediction</h3>
+                        <h3>Personal Portfolio Website</h3>
 
                         <p>
 
-                            Data Science project for predicting
-                            hydropower stock trends using Python and
-                            machine learning algorithms.
+                            Designed and developed a fully responsive personal
+                            portfolio using semantic HTML, custom CSS, and
+                            vanilla JavaScript.
+
+                        </p>
+
+                        <p><strong>Technologies:</strong></p>
+
+                        <p>
+
+                            HTML5 • CSS3 • JavaScript
 
                         </p>
 
                         <div class="project-links">
 
-                            <a href="#">Details</a>
+                            <a href="https://github.com/asmipandey18/My-Portfolio.git" target="_blank">
+                                GitHub
+                            </a>
 
-                            <a href="https://github.com/us" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="#" target="_blank">
+                                Live Demo
+                            </a>
 
                         </div>
 
                     </div>
 
                 </article>
+
+            </div>
+
+        </section>
+
+        <!-- ================= EDUCATION ================= -->
+
+        <section class="education" id="education">
+
+            <div class="section-title">
+
+                <h2>Education</h2>
+
+                <p>
+                    My academic journey and continuous learning path.
+                </p>
+
+            </div>
+
+            <div class="education-card">
+
+                <h3>
+                    Bachelor of Computer Application (BCA)
+                </h3>
+
+                <h4>
+                    Oxford College of Engineering and Management
+                </h4>
+
+                <p>
+
+                    Currently pursuing a Bachelor's degree in Computer
+                    Application, focusing on software development,
+                    database management, web technologies, artificial
+                    intelligence, and machine learning.
+
+                </p>
 
             </div>
 
@@ -368,71 +541,226 @@
 
         <!-- ================= CONTACT ================= -->
 
-        <section class="contact" id="contact">
+<section class="contact" id="contact">
 
-            <div class="section-title">
+    <div class="section-title">
 
-                <h2>Get In Touch</h2>
+        <h2>Get In Touch</h2>
 
-                <p>Let's build something amazing together.</p>
+        <p>
+            Have a question, project idea, or collaboration opportunity?
+            Feel free to reach out.
+        </p>
+
+    </div>
+
+    <div class="contact-container">
+
+        <!-- Contact Information -->
+
+        <div class="contact-info">
+
+            <h3>Contact Information</h3>
+
+            <div class="info-item">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <div>
+
+                    <h4>Email</h4>
+
+                    <p>asmip12345@gmail.com</p>
+
+                </div>
 
             </div>
 
-            <form id="contact-form">
+            <div class="info-item">
 
-                <input
-                    type="text"
-                    placeholder="Your Name"
-                    required>
+                <i class="fa-solid fa-phone"></i>
 
-                <input
-                    type="email"
-                    placeholder="Your Email"
-                    required>
+                <div>
 
-                <textarea
-                    rows="6"
-                    placeholder="Your Message"
-                    required>
-                </textarea>
+                    <h4>Phone</h4>
 
-                <button type="submit">
+                    <p>+977-9746302902</p>
 
-                    Send Message
+                </div>
 
-                </button>
+            </div>
 
-            </form>
+            <div class="info-item">
 
-        </section>
+                <i class="fa-solid fa-location-dot"></i>
 
-    </main>
+                <div>
 
-    <!-- ================= FOOTER ================= -->
+                    <h4>Location</h4>
 
-    <footer>
+                    <p>Chitwan, Nepal</p>
 
-        <p>
+                </div>
 
-            © 2026 Asmi Pandey.
-            Built with HTML, CSS & JavaScript.
+            </div>
 
-        </p>
+            <div class="social-links">
 
-    </footer>
+                <!-- GitHub -->
+                <a href="https://github.com/asmipandey18"
+                   target="_blank"
+                   aria-label="GitHub">
 
-    <!-- Back To Top -->
+                    <i class="fa-brands fa-github"></i>
 
-    <button id="topBtn">
+                </a>
 
-        <i class="fa-solid fa-arrow-up"></i>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/asmi-pandey-881834334/"
+                   target="_blank"
+                   aria-label="LinkedIn">
 
-    </button>
+                    <i class="fa-brands fa-linkedin"></i>
 
-    <!-- JavaScript -->
+                </a>
 
-    <script src="script.js"></script>
+                <!-- Email -->
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=asmip12345@gmail.com"target="_blank"
+                aria-label="Email">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+
+                <!-- Phone -->
+                <a href="tel:+977-9746302902"
+                   aria-label="Phone">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Contact Form -->
+
+        <!-- Replace YOUR_FORM_ID with your Formspree form ID -->
+        <form action="https://formspree.io/f/mkolvpkw" method="POST">
+
+            <label for="name">Full Name</label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                required>
+
+            <label for="email">Email Address</label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required>
+
+            <label for="subject">Subject</label>
+
+            <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Enter subject"
+                required>
+
+            <label for="message">Message</label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Write your message..."
+                required></textarea>
+
+            <button type="submit" class="primary-btn">
+
+                Send Message
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h3>Asmi Pandey</h3>
+
+    <p>
+        Data Science | AI & ML Enthusiast
+    </p>
+
+    <div class="footer-links">
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+
+    </div>
+
+    <div class="footer-social">
+
+        <a href="https://github.com/asmipandey18" target="_blank" aria-label="GitHub">
+
+    <i class="fa-brands fa-github"></i>
+
+</a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/asmi-pandey-881834334/"
+           target="_blank"
+           aria-label="LinkedIn">
+
+            <i class="fa-brands fa-linkedin"></i>
+
+        </a>
+
+        <!-- Email -->
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=asmip12345@gmail.com"
+   target="_blank"
+   aria-label="Email">
+    <i class="fa-solid fa-envelope"></i>
+</a>
+
+    </div>
+
+    <p class="copyright">
+
+        © 2026 Asmi Pandey. All Rights Reserved.
+
+    </p>
+
+</footer>
+
+<!-- Back To Top Button -->
+
+<button id="topBtn" aria-label="Back to top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
 
 </body>
-
 </html>

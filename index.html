@@ -1,113 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Asmi Pandey | Portfolio</title>
 
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
 
-    <!-- Header -->
+    <!-- ================= HEADER ================= -->
+
     <header class="header">
 
-        <div class="brand">
-            <h2>Asmi Pandey</h2>
-            <p>Aspiring Data Scientist | AI & ML Enthusiast</p>
+        <div class="logo">
+            <a href="#">Asmi<span>.</span></a>
         </div>
 
         <nav class="navbar">
+
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
+
         </nav>
-         <a href="#contact" class="talk-btn">Let's Connect</a>
+
+        <div class="header-actions">
+
+            <button id="theme-toggle" aria-label="Toggle Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <a href="#contact" class="btn">Let's Connect</a>
+
+        </div>
 
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
+    <!-- ================= MAIN ================= -->
 
-        <!-- Left Side Content -->
-        <div class="hero-content">
+    <main>
 
-            <h1>Hi, I'm <span>Asmi Pandey</span></h1>
+        <!-- ================= HERO ================= -->
 
-            <h3>Aspiring Data Scientist | AI & ML Enthusiast</h3>
+        <section class="hero" id="home">
 
-            <p>
-                Passionate about leveraging Data Science, Artificial Intelligence,
-                and Machine Learning to solve real-world challenges. I enjoy
-                building predictive models, analyzing data, and transforming
-                complex information into meaningful insights.
-            </p>
+            <div class="hero-content">
 
-            <div class="hero-btns">
-                <a href="#projects" class="btn">View Projects</a>
-                <a href="#contact" class="btn-outline">Contact Me</a>
+                <h1>
+                    Hi, I'm
+                    <span>Asmi Pandey</span>
+                </h1>
+
+                <h2>
+                    Aspiring Full-Stack Developer |
+                    AI & Machine Learning Enthusiast
+                </h2>
+
+                <p>
+
+                    I build responsive, accessible and user-friendly
+                    web applications using HTML, CSS and JavaScript.
+                    Alongside web development, I enjoy exploring Data
+                    Science and Machine Learning to solve real-world
+                    problems through technology.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="primary-btn">
+                        View Projects
+                    </a>
+
+                    <a href="#contact" class="secondary-btn">
+                        Contact Me
+                    </a>
+
+                </div>
+
             </div>
-            
-        </div>
 
-        <!-- Right Side Image -->
-        <div class="hero-image">
+            <div class="hero-image">
 
-            <div class="image-wrapper">
-                <img src="images/asmi.jpeg" alt="Asmi Pandey">
+                <img src="images/asmi.jpeg"
+                    alt="Portrait of Asmi Pandey">
+
             </div>
 
-        </div>
+        </section>
 
-    </section>
+        <!-- ================= ABOUT ================= -->
 
-    <!-- About me -->
-     <section class="about" id="about">
+        <section class="about" id="about">
 
-    <h2>About Me</h2>
+            <div class="section-title">
 
-    <div class="about-content">
-         <p>
-            Hello! I'm <span>Asmi Pandey</span>, a BCA(Bachelor of Computer Apllication) Student from
-            Oxford College of Engineering and Management. I am passionate about Data Science,
-            Artificial Intelligence, and Machine Learning. I enjoy exploring data, building
-            machine learning models, and developing innovative solutions to solve real-world
-            problems. Beyond technology, I love watching cricket and football, as these sports
-            inspire teamwork, strategy, and continuous improvement.
+                <h2>About Me</h2>
+
+                <p>Get to know me better.</p>
+
+            </div>
+
+            <div class="about-container">
+
+                <div class="about-image">
+
+                    <img src="images/asmi.jpeg"
+                        alt="Asmi Pandey">
+
+                </div>
+
+                <div class="about-content">
+
+                    <h3>
+                        Passionate Developer &
+                        Continuous Learner
+                    </h3>
+
+                    <p>
+
+                        I'm currently pursuing a Bachelor of Computer
+                        Applications (BCA) at Oxford College of
+                        Engineering and Management. I enjoy designing
+                        modern websites, building responsive user
+                        interfaces, and developing projects that solve
+                        practical problems.
+
+                    </p>
+
+                    <p>
+
+                        Apart from web development, I am enthusiastic
+                        about Artificial Intelligence, Machine Learning,
+                        and Data Science. I enjoy learning new
+                        technologies and continuously improving my
+                        programming and problem-solving skills.
+
+                    </p>
+
+                    <div class="about-cards">
+
+                        <article class="card">
+
+                            <i class="fa-solid fa-book-open"></i>
+
+                            <h4>Continuous Learning</h4>
+
+                            <p>
+                                Always learning modern technologies
+                                and best development practices.
+                            </p>
+
+                        </article>
+
+                        <article class="card">
+
+                            <i class="fa-solid fa-lightbulb"></i>
+
+                            <h4>Problem Solving</h4>
+
+                            <p>
+                                Building efficient solutions through
+                                logic and clean code.
+                            </p>
+
+                        </article>
+
+                        <article class="card">
+
+                            <i class="fa-solid fa-chart-line"></i>
+
+                            <h4>Data Driven</h4>
+
+                            <p>
+                                Using data and analysis to support
+                                better decisions.
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= SKILLS ================= -->
+
+        <section class="skills" id="skills">
+
+            <div class="section-title">
+
+                <h2>Technical Skills</h2>
+
+                <p>Technologies I work with.</p>
+
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>MySQL</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <h3>Git</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-github"></i>
+                    <h3>GitHub</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-brain"></i>
+                    <h3>Machine Learning</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section class="projects" id="projects">
+
+            <div class="section-title">
+
+                <h2>Projects</h2>
+
+                <p>Some of my recent work.</p>
+
+            </div>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+
+                    <img src="images/project1.jpg"
+                        alt="Portfolio Project">
+
+                    <div class="project-content">
+
+                        <h3>Personal Portfolio</h3>
+
+                        <p>
+
+                            Responsive portfolio website developed
+                            using semantic HTML, custom CSS and
+                            vanilla JavaScript.
+
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="#">Live Demo</a>
+
+                            <a href="https://github.com/asmipandey18/My-Portfolio.git">GitHub</a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="project-card">
+
+                    <img src="images/project2.jpg"
+                        alt="AI Project">
+
+                    <div class="project-content">
+
+                        <h3>AI Job Replacement Prediction</h3>
+
+                        <p>
+
+                            Machine Learning project predicting AI
+                            replacement risk using data preprocessing,
+                            feature engineering and Random Forest.
+
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="#">Case Study</a>
+
+                            <a href="#">GitHub</a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="project-card">
+
+                    <img src="images/project3.jpg"
+                        alt="Hydropower Project">
+
+                    <div class="project-content">
+
+                        <h3>Hydropower Share Prediction</h3>
+
+                        <p>
+
+                            Data Science project for predicting
+                            hydropower stock trends using Python and
+                            machine learning algorithms.
+
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="#">Details</a>
+
+                            <a href="https://github.com/us" target="_blank" rel="noopener noreferrer">GitHub</a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="contact" id="contact">
+
+            <div class="section-title">
+
+                <h2>Get In Touch</h2>
+
+                <p>Let's build something amazing together.</p>
+
+            </div>
+
+            <form id="contact-form">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required>
+
+                <textarea
+                    rows="6"
+                    placeholder="Your Message"
+                    required>
+                </textarea>
+
+                <button type="submit">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Asmi Pandey.
+            Built with HTML, CSS & JavaScript.
+
         </p>
 
-        <div class="approach-section">
+    </footer>
 
-    <h3>My Approach</h3>
+    <!-- Back To Top -->
 
-    <div class="approach-container">
+    <button id="topBtn">
 
-        <div class="approach-card">
-            <h4>📚 Continuous Learning</h4>
-            <p>
-                I continuously explore new technologies, tools, and concepts to enhance my knowledge and skills.
-            </p>
-        </div>
+        <i class="fa-solid fa-arrow-up"></i>
 
-        <div class="approach-card">
-            <h4>🧩 Problem Solving</h4>
-            <p>
-                I enjoy analyzing challenges and developing practical, data-driven solutions to real-world problems.
-            </p>
-        </div>
+    </button>
 
-        <div class="approach-card">
-            <h4>📊 Data-Driven Thinking</h4>
-            <p>
-                I believe in making informed decisions through data analysis, insights, and predictive modeling.
-            </p>
-        </div>
+    <!-- JavaScript -->
 
-    </div>
-
-</div>
+    <script src="script.js"></script>
 
 </body>
+
 </html>

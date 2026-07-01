@@ -597,17 +597,18 @@ section{
 
 .skills{
 
-    background:#111c33;
-
+    background: linear-gradient(180deg, #111c33 0%, #0F172A 100%);
 }
 
 .skills-grid{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
 
     gap:30px;
+
+    margin-top:50px;
 
 }
 
@@ -623,13 +624,41 @@ section{
 
     border-radius:20px;
 
-    padding:35px 25px;
+    padding:35px 30px;
 
     text-align:center;
 
-    transition:var(--transition);
-
     box-shadow:var(--shadow);
+
+    transition:all .35s ease;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* Top Accent Line */
+
+.skill-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:linear-gradient(90deg,var(--primary),var(--secondary));
+
+    transform:scaleX(0);
+
+    transition:.35s ease;
 
 }
 
@@ -639,7 +668,19 @@ section{
 
     border-color:var(--primary);
 
+    box-shadow:0 15px 35px rgba(56,189,248,.25);
+
 }
+
+.skill-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+/* ==========================================
+   ICON
+========================================== */
 
 .skill-card i{
 
@@ -649,23 +690,71 @@ section{
 
     margin-bottom:20px;
 
+    transition:.35s ease;
+
 }
+
+.skill-card:hover i{
+
+    color:var(--secondary);
+
+    transform:scale(1.1);
+
+}
+
+/* ==========================================
+   TITLE
+========================================== */
 
 .skill-card h3{
 
-    margin-bottom:15px;
+    font-size:1.35rem;
 
-    font-size:1.3rem;
+    margin-bottom:20px;
+
+    color:var(--text);
 
 }
 
-.skill-card p{
+/* ==========================================
+   LIST
+========================================== */
+
+.skill-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.skill-card ul li{
 
     color:var(--paragraph);
 
+    padding:10px 0;
+
     font-size:.95rem;
 
-    line-height:1.7;
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+
+}
+
+.skill-card ul li:last-child{
+
+    border-bottom:none;
+
+}
+
+.skill-card ul li:hover{
+
+    color:var(--primary);
+
+    padding-left:8px;
 
 }
 
@@ -703,61 +792,111 @@ section{
    PROJECTS SECTION
 ========================================== */
 
+.projects{
+
+    background:linear-gradient(180deg,#0F172A,#111C33);
+
+}
+
 .project-grid{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
 
-    gap:30px;
+    gap:35px;
+
+    margin-top:50px;
 
 }
+
+/* ==========================================
+   PROJECT CARD
+========================================== */
 
 .project-card{
 
     background:var(--card);
 
+    border:1px solid var(--border);
+
     border-radius:20px;
 
     overflow:hidden;
 
-    border:1px solid var(--border);
-
-    transition:var(--transition);
-
     box-shadow:var(--shadow);
+
+    transition:.35s ease;
 
 }
 
 .project-card:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-12px);
 
     border-color:var(--primary);
 
+    box-shadow:0 20px 40px rgba(56,189,248,.25);
+
 }
+
+/* ==========================================
+   PROJECT IMAGE
+========================================== */
 
 .project-card img{
 
     width:100%;
 
-    height:220px;
+    height:260px;
 
-    object-fit:cover;
+    object-fit:contain;
+
+    background:#0B1120;
+
+    padding:15px;
+
+    border-bottom:1px solid var(--border);
+
+    transition:.35s ease;
 
 }
 
+.project-card:hover img{
+
+    transform:scale(1.02);
+
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
 .project-content{
 
-    padding:25px;
+    padding:30px;
 
 }
 
 .project-content h3{
 
+    color:var(--primary);
+
+    font-size:1.6rem;
+
     margin-bottom:15px;
 
-    color:var(--primary);
+}
+
+.project-content h4{
+
+    margin-top:22px;
+
+    margin-bottom:12px;
+
+    color:#ffffff;
+
+    font-size:1rem;
 
 }
 
@@ -765,25 +904,103 @@ section{
 
     color:var(--paragraph);
 
-    margin-bottom:12px;
+    line-height:1.8;
 
 }
 
-.project-links{
+/* ==========================================
+   FEATURES
+========================================== */
 
-    margin-top:20px;
+.project-content ul{
+
+    padding-left:20px;
+
+    margin-bottom:20px;
+
+}
+
+.project-content ul li{
+
+    color:var(--paragraph);
+
+    margin-bottom:10px;
+
+}
+
+.project-content ul li::marker{
+
+    color:var(--primary);
+
+}
+
+/* ==========================================
+   TECH STACK
+========================================== */
+
+.tech-stack{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:15px;
+
+}
+
+.tech-stack span{
+
+    background:#0F172A;
+
+    color:var(--primary);
+
+    border:1px solid var(--primary);
+
+    padding:8px 15px;
+
+    border-radius:30px;
+
+    font-size:.85rem;
+
+    transition:.3s;
+
+}
+
+.tech-stack span:hover{
+
+    background:var(--primary);
+
+    color:#000;
+
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.project-links{
 
     display:flex;
 
     gap:15px;
 
+    margin-top:30px;
+
 }
 
 .project-links a{
 
-    padding:10px 18px;
+    flex:1;
 
-    border-radius:8px;
+    text-align:center;
+
+    text-decoration:none;
+
+    padding:12px;
+
+    border-radius:10px;
 
     background:var(--primary);
 
@@ -791,7 +1008,7 @@ section{
 
     font-weight:600;
 
-    transition:var(--transition);
+    transition:.3s;
 
 }
 
@@ -804,18 +1021,24 @@ section{
 }
 
 /* ==========================================
-   EDUCATION
+   EDUCATION SECTION
 ========================================== */
+
+.education{
+
+    background:linear-gradient(180deg,#111c33 0%,#0F172A 100%);
+
+}
 
 .education-card{
 
-    max-width:800px;
+    max-width:850px;
 
     margin:auto;
 
     background:var(--card);
 
-    padding:40px;
+    padding:45px;
 
     border-radius:20px;
 
@@ -825,9 +1048,75 @@ section{
 
     text-align:center;
 
+    transition:all .35s ease;
+
+}
+
+.education-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+}
+
+.education-card i{
+
+    font-size:3rem;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
 }
 
 .education-card h3{
+
+    color:var(--primary);
+
+    font-size:1.8rem;
+
+    margin-bottom:10px;
+
+}
+
+.education-card h4{
+
+    color:var(--text);
+
+    margin-bottom:15px;
+
+}
+
+.education-duration{
+
+    color:var(--secondary);
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.education-card p{
+
+    color:var(--paragraph);
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.coursework{
+
+    text-align:left;
+
+    margin-top:20px;
+
+}
+
+.coursework h4{
 
     color:var(--primary);
 
@@ -835,15 +1124,27 @@ section{
 
 }
 
-.education-card h4{
+.coursework ul{
 
-    margin-bottom:15px;
+    list-style:none;
+
+    padding:0;
 
 }
 
-.education-card p{
+.coursework li{
 
     color:var(--paragraph);
+
+    padding:10px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.coursework li:last-child{
+
+    border-bottom:none;
 
 }
 
@@ -1257,6 +1558,89 @@ footer p{
     .about-cards{
 
         grid-template-columns:1fr;
+    }
+
+}
+@media(max-width:768px){
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+    .header{
+
+        flex-wrap:wrap;
+
+    }
+
+    .navbar{
+
+        position:absolute;
+
+        top:90px;
+
+        left:0;
+
+        width:100%;
+
+        background:var(--card);
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:20px;
+
+        padding:30px 0;
+
+        border-top:1px solid var(--border);
+
+        transform:translateY(-150%);
+
+        transition:.4s ease;
+
+    }
+
+    .navbar.active{
+
+        transform:translateY(0);
+
+    }
+
+    .header-actions{
+
+        display:none;
+
+    }
+
+    .hero-content h1{
+
+        font-size:2.8rem;
+
+    }
+
+    .hero-content h2{
+
+        font-size:1.3rem;
+
+    }
+
+    .hero-image img{
+
+        width:280px;
+
+        height:280px;
+
+    }
+
+    .section-title h2{
+
+        font-size:2rem;
+
     }
 
 }

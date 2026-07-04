@@ -147,6 +147,21 @@ section{
     z-index:1000;
 
 }
+/* ==========================================
+   HEADER SCROLL EFFECT
+========================================== */
+
+.header.scrolled{
+
+    background:rgba(15,23,42,.98);
+
+    box-shadow:0 8px 25px rgba(0,0,0,.35);
+
+    border-bottom:1px solid var(--primary);
+
+    transition:all .3s ease;
+
+}
 
 /* ==========================================
    LOGO
@@ -357,7 +372,7 @@ section{
 
 .hero{
 
-    min-height:100vh;
+    min-height:calc(100vh - 90px);
 
     display:flex;
 
@@ -365,11 +380,15 @@ section{
 
     align-items:center;
 
-    gap:80px;
+    gap:60px;
 
-    padding-top:160px;
+    padding:120px 8% 80px;
 
 }
+
+/* ==========================================
+   HERO CONTENT
+========================================== */
 
 .hero-content{
 
@@ -379,9 +398,13 @@ section{
 
 .hero-content h1{
 
-    font-size:4rem;
+    font-size:clamp(3rem,6vw,4.5rem);
+
+    line-height:1.2;
 
     margin-bottom:20px;
+
+    font-weight:700;
 
 }
 
@@ -395,9 +418,25 @@ section{
 
     color:var(--secondary);
 
+    font-size:2rem;
+
     margin-bottom:25px;
 
-    font-size:1.8rem;
+    font-weight:600;
+
+}
+
+#typing-text{
+
+    color:var(--secondary);
+
+    font-size:2rem;
+
+    font-weight:600;
+
+    min-height:60px;
+
+    margin-bottom:25px;
 
 }
 
@@ -405,9 +444,13 @@ section{
 
     color:var(--paragraph);
 
-    margin-bottom:35px;
+    max-width:620px;
 
-    max-width:650px;
+    line-height:1.9;
+
+    font-size:1.05rem;
+
+    margin-bottom:35px;
 
 }
 
@@ -426,6 +469,60 @@ section{
 }
 
 /* ==========================================
+   HERO SOCIAL
+========================================== */
+
+.hero-social{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+.hero-social a{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:var(--card);
+
+    color:var(--primary);
+
+    border:1px solid var(--border);
+
+    font-size:1.4rem;
+
+    transition:.35s ease;
+
+}
+
+.hero-social a:hover{
+
+    background:var(--primary);
+
+    color:#000;
+
+    transform:translateY(-6px);
+
+    box-shadow:0 10px 25px rgba(56,189,248,.35);
+
+}
+
+/* ==========================================
    HERO IMAGE
 ========================================== */
 
@@ -437,39 +534,76 @@ section{
 
     justify-content:center;
 
+    align-items:center;
+
 }
 
 .hero-image img{
 
-    width:420px;
+    width:450px;
 
-    height:420px;
+    height:450px;
 
     object-fit:cover;
 
     border-radius:50%;
 
+    padding:8px;
+
     border:8px solid var(--background);
 
     background:linear-gradient(135deg,var(--primary),var(--secondary));
 
-    padding:8px;
-
     box-shadow:
+        0 0 30px rgba(56,189,248,.30),
+        0 0 60px rgba(168,85,247,.20);
 
-    0 0 25px rgba(56,189,248,.4),
+    opacity:0;
 
-    0 0 50px rgba(168,85,247,.25);
+    transform:translateX(70px);
 
-    transition:var(--transition);
+    animation:heroImage .9s ease-out forwards;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
 
 }
 
 .hero-image img:hover{
 
-    transform:scale(1.04);
+    transform:scale(1.05);
+
+    box-shadow:
+        0 0 40px rgba(56,189,248,.45),
+        0 0 80px rgba(168,85,247,.35);
 
 }
+
+/* ==========================================
+   HERO IMAGE ANIMATION
+========================================== */
+
+@keyframes heroImage{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(70px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
 /* ==========================================
    ABOUT SECTION
 ========================================== */
@@ -1326,6 +1460,21 @@ form button{
     cursor:pointer;
 
 }
+/* ==========================================
+   FORM MESSAGE
+========================================== */
+
+#form-message{
+
+    margin-top:20px;
+
+    font-weight:600;
+
+    color:#22C55E;
+
+    text-align:center;
+
+}
 
 /* ==========================================
    FOOTER
@@ -1435,10 +1584,6 @@ footer p{
 
 }
 
-/* ==========================================
-   BACK TO TOP BUTTON
-========================================== */
-
 #topBtn{
 
     position:fixed;
@@ -1459,13 +1604,13 @@ footer p{
 
     color:#000;
 
-    font-size:1.1rem;
-
     cursor:pointer;
+
+    font-size:1.2rem;
 
     box-shadow:var(--shadow);
 
-    transition:.35s ease;
+    transition:.3s;
 
     opacity:0;
 
@@ -1493,58 +1638,50 @@ footer p{
 
     color:#fff;
 
-    transform:translateY(-5px);
-
-}
-#topBtn{
-
-    position:fixed;
-
-    right:25px;
-
-    bottom:25px;
-
-    width:50px;
-
-    height:50px;
-
-    border:none;
-
-    border-radius:50%;
-
-    background:var(--primary);
-
-    color:#000;
-
-    cursor:pointer;
-
-    font-size:1.1rem;
-
-    box-shadow:var(--shadow);
-
-    transition:var(--transition);
-
-}
-
-#topBtn:hover{
-
-    background:var(--secondary);
-
-    color:#fff;
-
 }
 
 /* ==========================================
    RESPONSIVE DESIGN
 ========================================== */
-
-@media(max-width:992px){
+@media (max-width:992px){
 
     .hero{
 
-        flex-direction:column;
+        flex-direction:column-reverse;
 
         text-align:center;
+
+        gap:50px;
+
+        padding:120px 8% 60px;
+
+    }
+
+    .hero-content{
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .hero-content p{
+
+        margin:0 auto 35px;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero-social{
+
+        justify-content:center;
 
     }
 
@@ -1557,12 +1694,6 @@ footer p{
     .contact-container{
 
         grid-template-columns:1fr;
-
-    }
-
-    .hero-buttons{
-
-        justify-content:center;
 
     }
 
@@ -1712,6 +1843,11 @@ footer p{
         font-size:2rem;
 
     }
+    .hero-social{
+
+    justify-content:center;
+
+}
 
 }
 /* ==========================================
@@ -1726,5 +1862,26 @@ body.light-theme{
     --paragraph:#475569;
     --border:#CBD5E1;
     --shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+/* ==========================================
+   SCROLL REVEAL ANIMATION
+========================================== */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:all .8s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
 
 }

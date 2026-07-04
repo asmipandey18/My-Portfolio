@@ -63,13 +63,10 @@ themeToggle.addEventListener("click", () => {
     }
 
 });
-// ==========================================
-// BACK TO TOP BUTTON
-// ==========================================
+
+// Back to Top Button
 
 const topBtn = document.getElementById("topBtn");
-
-// Show button while scrolling
 
 window.addEventListener("scroll", () => {
 
@@ -85,8 +82,6 @@ window.addEventListener("scroll", () => {
 
 });
 
-// Scroll back to top
-
 topBtn.addEventListener("click", () => {
 
     window.scrollTo({
@@ -98,6 +93,7 @@ topBtn.addEventListener("click", () => {
     });
 
 });
+
 // ==========================================
 // ACTIVE NAVIGATION
 // ==========================================
@@ -136,3 +132,87 @@ window.addEventListener("scroll", () => {
     });
 
 });
+// ==========================================
+// SCROLL REVEAL ANIMATION
+// ==========================================
+
+const reveals = document.querySelectorAll(".reveal");
+
+function revealSections() {
+
+    reveals.forEach(section => {
+
+        const windowHeight = window.innerHeight;
+        const sectionTop = section.getBoundingClientRect().top;
+        const revealPoint = 120;
+
+        if (sectionTop < windowHeight - revealPoint) {
+
+            section.classList.add("active");
+
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", revealSections);
+
+// Reveal visible sections on page load
+revealSections();
+
+// ==========================================
+// CONTACT FORM SUCCESS MESSAGE
+// ==========================================
+
+const contactForm = document.querySelector("form");
+const formMessage = document.getElementById("form-message");
+
+contactForm.addEventListener("submit", () => {
+
+    formMessage.textContent = "Sending your message...";
+
+});
+
+// ==========================================
+// HEADER SCROLL EFFECT
+// ==========================================
+
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 50) {
+
+        header.classList.add("scrolled");
+
+    } else {
+
+        header.classList.remove("scrolled");
+
+    }
+
+});
+
+const typingText = document.getElementById("typing-text");
+
+const text = "Aspiring AI & Machine Learning Engineer";
+
+let index = 0;
+
+function typeEffect() {
+
+    if (index < text.length) {
+
+        typingText.textContent += text.charAt(index);
+
+        index++;
+
+        setTimeout(typeEffect, 80);
+
+    }
+
+}
+
+typeEffect();
+

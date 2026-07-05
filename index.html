@@ -28,10 +28,10 @@
 
             <a href="#">Asmi Pandey</a>
 
-            <p>Aspiring AI & Machine Learning Engineer</p>
+            <p>AI & Machine Learning Engineer</p>
         </div>
 
-        <nav class="navbar" id="navbar">
+        <nav class="navbar" id="navbar" aria-label="Main Navigation">
 
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -42,27 +42,35 @@
 
         </nav>
 
-        <button class="menu-toggle" id="menu-toggle">
+            <div class="header-actions">
 
-            <i class="fa-solid fa-bars"></i>
-
-        </button>
-
-        <div class="header-actions">
-
-            <button id="theme-toggle">
+            <button
+                id="theme-toggle"
+                aria-label="Toggle Dark and Light Mode">
 
                 <i class="fa-solid fa-moon"></i>
 
             </button>
 
-            <a href="#contact" class="primary-btn">
+        <a href="#contact" class="primary-btn">
 
-                Let's Connect
+            Let's Connect
 
-            </a>
+        </a>
 
-        </div>
+    </div>
+
+          <!-- Mobile Menu Button -->
+
+    <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Open Navigation Menu">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
 
     </header>
 
@@ -70,11 +78,11 @@
 
         <!-- ================= HERO ================= -->
 
-        <section class="hero reveal" id="home">
+        <section class="hero reveal" id="home" aria-labelledby="hero-title">
 
             <div class="hero-content">
 
-                <h1>
+                <h1 id="hero-title">
 
                     Hi, I'm <span>Asmi Pandey</span>
 
@@ -84,9 +92,7 @@
 
                 <p>
                     I am a Bachelor of Computer Application (BCA) student passionate about
-                    Web Development, Data Science, Artificial Intelligence, and Machine Learning.
-                    I enjoy building responsive websites, analyzing data, and developing
-                    intelligent solutions to solve real-world problems.
+                    Artificial Intelligence, Machine Learning, and Data Science. I enjoy building intelligent applications, analyzing data, and developing AI-driven solutions to solve real-world problems.
                 </p>
 
                 <div class="hero-buttons">
@@ -135,108 +141,106 @@
 
         <!-- ================= ABOUT ================= -->
 
-        <section class="about reveal" id="about">
-
-            <div class="section-title">
-
-                <h2>About Me</h2>
-
-                <p>
-
-                    Learn more about my background, interests, and journey
-                    in technology.
-
-                </p>
-
-            </div>
-
-            <div class="about-container">
-
-                <div class="about-image">
-
-                    <img src="images/asmi.jpeg"
-                        alt="Asmi Pandey">
-
-                </div>
-
-                <div class="about-content">
-
-                    <h3>Passionate About Technology & Innovation</h3>
-
-                    <p>
-                        I am currently pursuing a Bachelor of Computer Application (BCA) at Oxford College of Engineering and Management. I am passionate about Artificial Intelligence, Machine Learning, and Data Science. My goal is to build intelligent systems that solve real-world problems through data-driven solutions.
-
-                    </p>
-                    <p>
-
-                        Beyond programming, I enjoy watching cricket and football.
-                        These sports inspire teamwork, strategy, discipline,
-                        and continuous improvement.
-
-                    </p>
-
-                    <div class="about-cards">
-
-                        <article class="card">
-
-                            <i class="fa-solid fa-code"></i>
-
-                            <h4>Web Development</h4>
-
-                            <p>
-
-                                Building modern, responsive, and user-friendly
-                                web applications.
-
-                            </p>
-
-                        </article>
-
-                        <article class="card">
-
-                            <i class="fa-solid fa-brain"></i>
-
-                            <h4>Machine Learning</h4>
-
-                            <p>
-
-                                Exploring predictive analytics and intelligent
-                                systems using Python.
-
-                            </p>
-
-                        </article>
-
-                        <article class="card">
-
-                            <i class="fa-solid fa-chart-line"></i>
-
-                            <h4>Data Analysis</h4>
-
-                            <p>
-
-                                Converting raw data into meaningful insights
-                                through visualization and analytics.
-
-                            </p>
-
-                        </article>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- ================= SKILLS ================= -->
-
-<section class="skills reveal" id="skills">
+<section class="about reveal" id="about"  aria-labelledby="about-title">
 
     <div class="section-title">
 
-        <h2>Technical Skills</h2>
+        <h2 id="about-title">About Me</h2>
+
+        <p>
+            Learn more about my academic journey, technical interests,
+            and passion for Artificial Intelligence and Machine Learning.
+        </p>
+
+    </div>
+
+    <div class="about-container">
+
+        <div class="about-image">
+            <img
+                src="images/asmi.jpeg"
+                alt="Portrait of Asmi Pandey"
+                loading="lazy">
+
+        </div>
+
+        <div class="about-content">
+
+            <h3>Passionate About Artificial Intelligence & Innovation</h3>
+
+            <p>
+                I am currently pursuing a Bachelor of Computer Application (BCA)
+                at Oxford College of Engineering and Management. I am passionate
+                about Artificial Intelligence, Machine Learning, and Data Science,
+                with a strong interest in building intelligent systems that solve
+                real-world problems through data-driven solutions.
+            </p>
+
+            <p>
+                I enjoy continuously learning new technologies, improving my
+                problem-solving skills, and working on projects that combine
+                programming, data analysis, and machine learning. Beyond
+                technology, I enjoy watching cricket and football, which have
+                taught me the importance of teamwork, discipline, and strategic
+                thinking.
+            </p>
+
+            <div class="about-cards">
+
+                <article class="card">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <h4>Artificial Intelligence</h4>
+
+                    <p>
+                        Building intelligent systems using Machine Learning,
+                        Python, and Data Science techniques.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <i class="fa-solid fa-robot"></i>
+
+                    <h4>Machine Learning</h4>
+
+                    <p>
+                        Developing predictive models through data preprocessing,
+                        feature engineering, and model evaluation.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <h4>Data Science</h4>
+
+                    <p>
+                        Transforming raw data into meaningful insights using
+                        visualization, statistical analysis, and machine learning.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- ================= SKILLS ================= -->
+
+<section class="skills reveal" id="skills" aria-labelledby="skills-title">
+
+    <div class="section-title">
+
+        <h2 id="skills-title">Technical Skills</h2>
 
         <p>
             Technologies, programming languages, tools, and frameworks
@@ -383,11 +387,11 @@
 
   <!-- ================= PROJECTS ================= -->
 
-<section class="projects reveal" id="projects">
+<section class="projects reveal" id="projects" aria-labelledby="projects-title">
 
     <div class="section-title">
 
-        <h2>Featured Projects</h2>
+        <h2 id="projects-title">Featured Projects</h2>
 
         <p>
             Explore some of my academic and personal projects that demonstrate
@@ -547,11 +551,11 @@
 
 <!-- ================= EDUCATION ================= -->
 
-<section class="education reveal" id="education">
+<section class="education reveal" id="education"  aria-labelledby="education-title">
 
     <div class="section-title">
 
-        <h2>Education</h2>
+        <h2 id="education-title">Education</h2>
 
         <p>
             My academic background and the knowledge I have gained
@@ -606,11 +610,11 @@
 
         <!-- ================= CONTACT ================= -->
 
-<section class="contact reveal" id="contact">
+<section class="contact reveal" id="contact" aria-labelledby="contact-title">
 
     <div class="section-title">
 
-        <h2>Get In Touch</h2>
+        <h2 id="contact-title">Get In Touch</h2>
 
         <p>
             Have a question, project idea, or collaboration opportunity?
@@ -710,43 +714,54 @@
         <!-- Contact Form -->
 
         <!-- Replace YOUR_FORM_ID with your Formspree form ID -->
-        <form action="https://formspree.io/f/mkolvpkw" method="POST">
+        <form
+            action="https://formspree.io/f/mkolvpkw"
+            method="POST"
+            aria-label="Contact Form">
 
             <label for="name">Full Name</label>
 
-            <input
+                <input
                 type="text"
                 id="name"
                 name="name"
                 placeholder="Enter your full name"
                 required>
 
+                <small class="error" id="nameError"></small>
+
             <label for="email">Email Address</label>
 
-            <input
+                <input
                 type="email"
                 id="email"
                 name="email"
                 placeholder="Enter your email"
                 required>
 
+                <small class="error" id="emailError"></small>
+
             <label for="subject">Subject</label>
 
-            <input
+                <input
                 type="text"
                 id="subject"
                 name="subject"
                 placeholder="Enter subject"
                 required>
 
+                <small class="error" id="subjectError"></small>
+
             <label for="message">Message</label>
 
-            <textarea
+                <textarea
                 id="message"
                 name="message"
                 rows="6"
                 placeholder="Write your message..."
                 required></textarea>
+
+                <small class="error" id="messageError"></small>
 
             <button type="submit" class="primary-btn">
 
@@ -765,7 +780,7 @@
 
 <!-- ================= FOOTER ================= -->
 
-<footer>
+<footer role="contentinfo">
 
     <h3>Asmi Pandey</h3>
 

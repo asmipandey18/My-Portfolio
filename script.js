@@ -162,14 +162,96 @@ window.addEventListener("scroll", revealSections);
 revealSections();
 
 // ==========================================
-// CONTACT FORM SUCCESS MESSAGE
+// CONTACT FORM VALIDATION
 // ==========================================
 
 const contactForm = document.querySelector("form");
+
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const subjectInput = document.getElementById("subject");
+const messageInput = document.getElementById("message");
+
+const nameError = document.getElementById("nameError");
+const emailError = document.getElementById("emailError");
+const subjectError = document.getElementById("subjectError");
+const messageError = document.getElementById("messageError");
+
 const formMessage = document.getElementById("form-message");
 
-contactForm.addEventListener("submit", () => {
+contactForm.addEventListener("submit", function (event) {
 
+    let isValid = true;
+
+    nameError.textContent = "";
+    emailError.textContent = "";
+    subjectError.textContent = "";
+    messageError.textContent = "";
+    formMessage.textContent = "";
+
+    // Name Validation
+
+    const namePattern = /^[A-Za-z ]+$/;
+
+    if (nameInput.value.trim() === "") {
+
+        nameError.textContent = "Full name is required.";
+        isValid = false;
+
+    } else if (!namePattern.test(nameInput.value.trim())) {
+
+        nameError.textContent = "Only letters and spaces are allowed.";
+        isValid = false;
+
+    }
+
+    // Email Validation
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (emailInput.value.trim() === "") {
+
+        emailError.textContent = "Email is required.";
+        isValid = false;
+
+    } else if (!emailPattern.test(emailInput.value.trim())) {
+
+        emailError.textContent = "Please enter a valid email address.";
+        isValid = false;
+
+    }
+
+    // Subject Validation
+
+    if (subjectInput.value.trim().length < 5) {
+
+        subjectError.textContent =
+            "Subject must contain at least 5 characters.";
+
+        isValid = false;
+
+    }
+
+    // Message Validation
+
+    if (messageInput.value.trim().length < 20) {
+
+        messageError.textContent =
+            "Message must contain at least 20 characters.";
+
+        isValid = false;
+
+    }
+
+    if (!isValid) {
+
+        event.preventDefault();
+
+        return;
+
+    }
+
+    formMessage.style.color = "#38BDF8";
     formMessage.textContent = "Sending your message...";
 
 });
@@ -196,7 +278,7 @@ window.addEventListener("scroll", () => {
 
 const typingText = document.getElementById("typing-text");
 
-const text = "Aspiring AI & Machine Learning Engineer";
+const text = "AI & Machine Learning Engineer";
 
 let index = 0;
 

@@ -1460,6 +1460,19 @@ form button{
     cursor:pointer;
 
 }
+.error{
+
+    display:block;
+
+    color:#ff5f5f;
+
+    font-size:.85rem;
+
+    margin-top:-12px;
+
+    margin-bottom:18px;
+
+}
 /* ==========================================
    FORM MESSAGE
 ========================================== */
